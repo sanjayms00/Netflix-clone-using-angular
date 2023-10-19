@@ -1,0 +1,22 @@
+
+
+<div class="container mt-5 pt-5">
+    <div class="row text-white">
+        <div class="col-lg-4">
+            <img class="img-fluid" src="https://image.tmdb.org/t/p/original/{{ movieData.backdrop_path }}" alt="..." />
+        </div>
+        <div class="col-lg-8">
+            <h1 class="font-weight-light">{{ movieData.original_title }}</h1>
+            <p>{{ movieData.overview }}</p>
+            <!-- Button trigger modal -->
+            <a class="btn btn-danger" href="https://www.themoviedb.org/video/play?key={{movieVideo}}" target="_blank">
+                play Trailer
+                <i class="fa-solid fa-circle-play"></i>
+            </a>
+            <div class="mt-5">
+                <h2>Top Cast</h2>
+            </div>
+           <app-casts [movieCast]="movieCast"></app-casts>
+        </div>
+    </div>
+</div>

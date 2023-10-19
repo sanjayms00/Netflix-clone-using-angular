@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #000;
+    overflow-x: hidden;
+}
+
+
+
+.rowposter{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.row-img {
+    max-width: 150px;
+    object-fit: contain;
+    width: 100%;
+    box-sizing: content-box;
+    transition: transform 450ms;
+    margin: 0 5px;
+}
+
+.row-img:hover{
+    transform: scale(1.10);
+    cursor: pointer;
+}
+
+.large-poster{
+    max-height: 300px;
+}
+
+.rowposter::-webkit-scrollbar{
+    display: none;
+}

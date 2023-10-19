@@ -1,0 +1,8 @@
+<div class="row">
+    <h5 class="text-white">Science Movies</h5>
+    <div class="rowposter mt-3 p-2">
+      <ng-container *ngFor="let science of scienceMovies">
+        <img src="https://image.tmdb.org/t/p/original/{{ science.poster_path}}" class="row-img large-poster" alt="" [routerLink]="['/movies', science.id]">
+      </ng-container>
+    </div> 
+  </div>
